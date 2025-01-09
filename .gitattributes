@@ -1,2 +1,20 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+#Bienvenido a la calculadora de tazas de mezcla para arepas
+
+tazas_agua=int(input("Con cúantas tazas de agua cuenta")) #Se pide la cantidad de tazas de agua
+tazas_harina=int(input("Con cúantas tazas de harina pan cuenta")) #Se pide la cantidad de tazas de harina
+cucharaditas_sal=int(input("Con cúantas cucharaditas de sal cuenta")) #Se pide la cantidad de cucharaditas de sal
+cucharadas_aceite=int(input("Con cúantas cucharadas de aceite cuenta")) #Se pide la cantidad de cucharadas de aceite
+
+cucharas_sal=(cucharaditas_sal/3) #Se transforma el valor de cucharaditas a cucharadas de sal
+tazas_sal=(cucharas_sal/16) #Se transforma el valor de cucharadas a tazas de sal
+
+tazas_aceite=(cucharadas_aceite/16) #Se transforma el valor de cucharadas a tazas de aceite
+
+tazas_totales1=(tazas_agua+tazas_harina+tazas_sal+tazas_aceite) #Se suman la cantidad de tazas totales
+
+print("Al juntar los ingredientes va a obtener un total de", tazas_totales1, "tazas de mezcla para arepas")
+
+pérdida_volumen=((tazas_totales1*10)/100) #Se calcula la cantidad de tazas evaporadas durante la cocción
+tazas_totales2=(tazas_totales1-pérdida_volumen) #Se resta las tasas evaporadas al total de la mezcla
+
+print("Tras el proceso de evaporación habra pérdido aproximadamente", pérdida_volumen, "tazas de mezcla, obteniendo así", tazas_totales2, "tazas de mezcla para arepas")
