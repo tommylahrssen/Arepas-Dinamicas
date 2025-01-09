@@ -18,3 +18,5 @@ pérdida_volumen=((tazas_totales1*10)/100) #Se calcula la cantidad de tazas evap
 tazas_totales2=(tazas_totales1-pérdida_volumen) #Se resta las tasas evaporadas al total de la mezcla
 
 print("Tras el proceso de evaporación habra pérdido aproximadamente", pérdida_volumen, "tazas de mezcla, obteniendo así", tazas_totales2, "tazas de mezcla para arepas")
+
+input("Presione «enter» para continuar")
